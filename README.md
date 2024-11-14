@@ -19,8 +19,11 @@ Este repositório contém uma coleção de projetos simples desenvolvidos para e
   - Implementação de reconhecimento de objetos com Yolo.
 
 - **[Projeto 2 - Jogo do Dinossauro](./dino)**
-  - Aplicação de filtros de detecção de bordas, como Sobel e Canny.
-  
+  - Aplicação de filtros de detecção de bordas, como pynput e OpenCV.
+
+- **[Projeto 3 - Detector de Faces](./detector-faces)**
+  - Aplicação de filtros de detecção de faces, com Haar Cascade.
+
 <!-- - **[Projeto 3 - Rastreamento de Movimento](./rastreamento-de-movimento)**
   - Rastreamento de objetos em movimento usando background subtraction.
 
