@@ -10,36 +10,28 @@ Este repositório contém uma coleção de projetos simples desenvolvidos para e
 ![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
 ![CVZone](https://img.shields.io/badge/cvzone-27338e?style=for-the-badge&logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-013243?style=for-the-badge&logo=python&logoColor=white)
+
 
 </div>
 
 ## Projetos
 
-- **[Projeto 1 - Reconhecimento de Objetos](./reconhecimento-de-objetos)**
-  - Implementação de reconhecimento de objetos com Yolo.
+- **[Projeto 1 - Reconhecimento de Objetos](./reconhecimento-de-objetos/README.md)**
+  - Implementação de reconhecedor de objetos com Yolo.
 
-- **[Projeto 2 - Jogo do Dinossauro](./dino)**
-  - Aplicação de filtros de detecção de bordas, como pynput e OpenCV.
+- **[Projeto 2 - Jogo do Dinossauro](./dino/README.md)**
+  - Jogo do Dinossauro feito com uso do Pynput e OpenCV.
 
-- **[Projeto 3 - Detector de Faces](./detector-faces)**
+- **[Projeto 3 - Detector de Faces](./detector-faces/README.md)**
   - Aplicação de filtros de detecção de faces, com Haar Cascade.
 
-<!-- - **[Projeto 3 - Rastreamento de Movimento](./rastreamento-de-movimento)**
-  - Rastreamento de objetos em movimento usando background subtraction.
-
-- **[Projeto 4 - Classificação de Imagens](./classificacao-de-imagens)**
-  - Utilização de um modelo pré-treinado para classificar imagens em categorias. -->
+- **[Projeto 4 - Detector de Emocoes](./detector-emocoes/README.md)**
+  - Aplicação de filtros de detecção de emoções, com Haar Cascade.
 
 Cada projeto inclui um README próprio com informações detalhadas sobre sua implementação, dependências e como rodar os exemplos.
 
 ## Como Executar
-### Pré-requisitos
-
-- **Python**
-- **OpenCV**
-- **CVZone**
-- **Numpy**
-
 ### Passos para execução
 
 1. Clone o repositório:
@@ -56,14 +48,38 @@ Cada projeto inclui um README próprio com informações detalhadas sobre sua im
     .\venv\Scripts\activate    # No Windows
    ```
 
-2. Instale as depêndencias:
+3. Vá para o diretorio do projeto escolhido
    ```bash
-    python -m pip install -r requirements.txt
+   cd dino/ # Diretorio do jogo do Dinossauro
 
-    python -m pip install -r requirements-optional.txt # dependências opcionais
+   cd reconhecimento-de-objetos/ # Diretorio do reconhecedor de objetos
+
+   cd detector-faces/ # Diretorio do reconhecedor de faces
+
+   cd detector-emocoes/ # Diretorio do detector de emocoes
    ```
 
-3. Execute o projeto:
+4. Após ter ido para o diretório do projeto de desejado, instale as depêndencias necessárias:
    ```bash
-   python main.py
+    python -m pip install -r requirements-objetos.txt # depêndencias para o reconhecedor de objetos
+
+    python -m pip install -r requirements-dino.txt # depêndencias para o jogo do dinossauro
+
+    python -m pip install -r requirements-faces.txt # depêndencias para o detector de faces
+
+    python -m pip install -r requirements-emocoes.txt # depêndencias para o reconhecedor de emoções
+
+
+    python -m pip install -r requirements.txt # Alternativamente, caso queira instalar todas as depedências de todos os projetos
+   ```
+
+5. Execute o arquivo py do respectivo projeto:
+   ```bash
+   python Camera.py # Jogo do Dinossauro
+
+   python Main.py # Reconhecedor de objetos
+
+   python Main,py # Reconhecedor de faces
+
+   python app.py # Detector de emocoes faciais
    ```
