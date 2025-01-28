@@ -79,7 +79,7 @@ Cada projeto inclui um README próprio com informações detalhadas sobre sua im
 
    python Main.py # Reconhecedor de objetos
 
-   python Main,py # Reconhecedor de faces
+   python Main.py # Reconhecedor de faces
 
    python app.py # Detector de emocoes faciais
    ```
